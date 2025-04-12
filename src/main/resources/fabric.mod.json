@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "bedloader",
+  "version": "${version}",
+  "name": "BedLoader",
+  "description": "An updated client-side companion for GeyserSkinManager to restore Bedrock Edition player's skins on Java servers.",
+  "authors": [
+    "Camotoy",
+    "FabricMC Community",
+    "GeyserMC",
+    "VeryUniqueUsrnm"
+    
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/BedLoader/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.veryuniqueusrnm.bedloader.client.BedLoaderClient"
+    ]
+  },
+  "mixins": [
+    "BedLoader.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "fabric-api": "*",
+    "minecraft": "~1.21.4"
+  }
+}
